@@ -1,14 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
 html {
-  background: #333;
+  background: #555;
+}
+  
+body {
+  margin: 0;
 }
 
-#headerlinks {
-  font-family: Questrial, sans-serif;
+#header {
+  background: linear-gradient(#333, black);
+  display: block;
+  width: 100%;
+  }
+
+#headerlogo {
+  width: 130px;
+  height: 130px;
+  padding: 25px;
+}
+
+#headerlink {
+  font-family: Questrial;
   color: white;
+  font-size: 40px;
+  line-height: 180px;
   float: right;
-  line-height: 100px;
-  margin-right: 50px;
+  padding-right: 50px;
   text-decoration: none;
 }
