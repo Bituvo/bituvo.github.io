@@ -4,6 +4,10 @@
   <p id='text'>Loading...</p>
   
   <script>
-    document.getElementById('text').innerText = document.URL;
+    let ptag = document.getElementById('text');
+    let queryString = window.location.search;
+    let urlparams = new URLSearchParams(queryString);
+    
+    ptag.innerHTML = urlparams.get('value');
   </script>
 </html>
