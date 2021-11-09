@@ -1,5 +1,4 @@
-var Scratch = require('scratch-api');
-const fetch = require('node-fetch');
+import * from 'scratchapi'
 Scratch.UserSession.load(function (err, user) {
     user.cloudSession(578157221 /*project id*/, function (err, cloud) {
         function timeout() {
