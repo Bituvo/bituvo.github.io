@@ -12,11 +12,12 @@ function addProject(data) {
   const language = data[data.length - 1];
   
   const projectsDiv = document.getElementById('projects');
-  const newProjectDiv = projectsDiv.createElement('div');
+  const newProjectDiv = document.createElement('div');
   newProjectDiv.setAttribute('class', 'project')
   newProjectDiv.onclick = function() {
     document.location.href = link;
   };
+  newProjectsDiv.appendChild(newProjectDiv);
   
   const titleText = newProjectDiv.createElement('h1');
   titleText.innerText = title;
