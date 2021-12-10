@@ -49,4 +49,4 @@ function refreshProjects(mode) {
   };
 };
 
-refreshProjects('all');
+refreshProjects('python');
