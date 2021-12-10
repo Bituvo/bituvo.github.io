@@ -25,6 +25,13 @@ header {
   margin: 10px;
 }
 
+#mainContent {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
 #generateBtn {
   background-color: white;
   border: 1px solid gray;
