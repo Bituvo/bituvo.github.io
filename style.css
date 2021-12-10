@@ -32,7 +32,7 @@ header {
   margin: 20px;
 }
 
-#project {
+.project {
   color: black;
   background-color: white;
   border: 1px solid gray;
@@ -43,12 +43,12 @@ header {
   padding: 15px;
 }
 
-#project:hover {
+.project:hover {
   transform: translate(0, -2px);
   filter: drop-shadow(0 0 2px gray);
 }
 
-#project:active {
+.project:active {
   transform: translate(0, 2px);
   background-color: #eee;
 }
