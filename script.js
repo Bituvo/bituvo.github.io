@@ -17,10 +17,9 @@ function addProject(data) {
   newProjectDiv.onclick = function() {
     document.location.href = link;
   };
-  newProjectsDiv.appendChild(newProjectDiv);
   
-  const titleText = newProjectDiv.createElement('h1');
-  titleText.innerText = title;
-};
+  newProjectDiv.innerHTML += '<h1>' + title + '</h1>';
+  
+  projectsDiv.appendChild(newProjectDiv);
 
 addProject(projects[3]);
