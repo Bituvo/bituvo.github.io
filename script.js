@@ -14,7 +14,7 @@ function addProject(data) {
   const projectsDiv = document.getElementById('projects');
   const newProjectDiv = projectsDiv.createElement('div');
   newProjectDiv.setAttribute('class', 'project')
-  newProjectDiv.onclick = function {
+  newProjectDiv.onclick = function() {
     document.location.href = link;
   };
   
