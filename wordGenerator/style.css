@@ -30,6 +30,12 @@ header {
   transform: translate(-50%,-50%);
   top: 50%;
   left: 50%;
+  clear: left;
+}
+
+#generatedWord {
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
 #generateBtn {
