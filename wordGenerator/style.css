@@ -50,6 +50,8 @@ header {
   transition: 0.1s;
   cursor: pointer;
   width: 300px;
+  display: table;
+  margin: 0 auto;
 }
 
 #generateBtn:hover {
