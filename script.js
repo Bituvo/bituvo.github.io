@@ -17,6 +17,7 @@ function addProject(data) {
   newProjectDiv.onclick = function() {
     document.location.href = link;
   };
+  newProjectDiv.style.cssText += 'cursor: pointer;';
   
   newProjectDiv.innerHTML += '<h1>' + title + '</h1>';
   
