@@ -21,5 +21,6 @@ function addProject(data) {
   newProjectDiv.innerHTML += '<h1>' + title + '</h1>';
   
   projectsDiv.appendChild(newProjectDiv);
+}
 
 addProject(projects[3]);
