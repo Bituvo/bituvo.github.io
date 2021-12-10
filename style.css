@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
+
 * {
   margin: 0;
   font-family: Questrial;
@@ -39,7 +40,6 @@ header {
   height: 300px;
   box-sizing: border-box;
   padding: 15px;
-  cursor: pointer;
 }
 
 #project:hover {
