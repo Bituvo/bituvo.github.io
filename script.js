@@ -33,6 +33,7 @@ function refreshProjects(mode) {
   if (mode == 'all') {
     for (const item in projects) {
       addProject(item);
+      console.log(item);
     };
   };
 };
