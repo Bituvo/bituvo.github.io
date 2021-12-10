@@ -24,4 +24,17 @@ function addProject(data) {
   projectsDiv.appendChild(newProjectDiv);
 }
 
-addProject(projects[3]);
+function refreshProjects(mode) {
+  const elements = document.getElementsByClassName('project');
+  while (elements.length > 0) {
+    elements[0].parentNode.removeChild(elements[0]);
+  }
+  
+  if (mode == 'all') {
+    for (const item in projects) {
+      addProject(item);
+    };
+  };
+};
+
+refreshProjects('all');
