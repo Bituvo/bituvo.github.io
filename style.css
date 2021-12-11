@@ -52,3 +52,10 @@ header {
   transform: translate(0, 2px);
   background-color: #eee;
 }
+
+hr {
+  border: none;
+  border-top: 1px double #aaa;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
