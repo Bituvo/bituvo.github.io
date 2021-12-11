@@ -48,5 +48,3 @@ function refreshProjects(mode) {
     };
   };
 };
-
-refreshProjects('python');
