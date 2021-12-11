@@ -59,3 +59,11 @@ hr {
   margin-top: 15px;
   margin-bottom: 20px;
 }
+
+.languageOption {
+  margin: 10px;
+}
+
+input, label {
+  cursor: pointer;
+}
