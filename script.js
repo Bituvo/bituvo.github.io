@@ -20,9 +20,9 @@ function addProject(data) {
   newProjectDiv.style.cssText += 'cursor: pointer;';
   
   newProjectDiv.innerHTML += '<h1>' + title + '</h1>';
-  for (const label in info) {
-    newProjectDiv.innerHTML += "<p margin='margin-top: 15px;'>" + info[label] + "</p>"
-  }
+  for (const label of info) {
+    newProjectDiv.innerHTML += "<p margin='margin-top: 15px;'>" + label + "</p>"
+  };
   
   projectsDiv.appendChild(newProjectDiv);
 }
