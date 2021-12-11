@@ -67,3 +67,7 @@ hr {
 input, label {
   cursor: pointer;
 }
+
+input {
+  transform: scale(1.5);
+}
