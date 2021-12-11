@@ -21,7 +21,7 @@ function addProject(data) {
   
   newProjectDiv.innerHTML += '<h1>' + title + '</h1>';
   for (const label in info) {
-    newProjectDiv.innerHTML += "<p margin='margin-top: 15px;'>" + label + "</p>"
+    newProjectDiv.innerHTML += "<p margin='margin-top: 15px;'>" + info[label] + "</p>"
   }
   
   projectsDiv.appendChild(newProjectDiv);
