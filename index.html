@@ -4,6 +4,7 @@
   <title>Bituvo Coding</title>
   <link rel='icon' href='logo.svg'>
   <link rel='stylesheet' href='style.css'>
+  <script src='script.js'></script>
   
   <header>
     <p style='float: left;'>
@@ -24,16 +25,16 @@
   
   <div style='display: flex; font-size: 30px; margin-left: 20px;'>
     <div class='languageOption'>
-      <input type='radio' id='all' name='languageSelection' value='all' checked>
-      <label for='all'>All</label>
+      <input type='radio' id='all' name='languageSelection' value='all' checked onclick="refreshProjects('all');">
+      <label for='all' onclick="refreshProjects('all');">All</label>
     </div>
     <div class='languageOption'>
-      <input type='radio' id='python' name='languageSelection' value='python' checked>
-      <label for='python'>Python</label>
+      <input type='radio' id='python' name='languageSelection' value='python' checked onclick="refreshProjects('python');">
+      <label for='python' onclick="refreshProjects('python');">Python</label>
     </div>
     <div class='languageOption'>
-      <input type='radio' id='javascript' name='languageSelection' value='javascript' checked>
-      <label for='javascript'>Javascript</label>
+      <input type='radio' id='javascript' name='languageSelection' value='javascript' checked onclick="refreshProjects('javascript');">
+      <label for='javascript' onclick="refreshProjects('javascript');">Javascript</label>
     </div>
   </div>
 
