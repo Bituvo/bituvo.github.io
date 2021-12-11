@@ -41,12 +41,12 @@ header {
   height: 300px;
   box-sizing: border-box;
   padding: 15px;
-  filter: box-shadow: 0 0 0 gray;
+  box-shadow: 0 0 0 gray;
 }
 
 .project:hover {
   transform: translate(0, -2px);
-  filter: box-shadow: 0 0 2px gray;
+  box-shadow: 0 0 2px gray;
 }
 
 .project:active {
