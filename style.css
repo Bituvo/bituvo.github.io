@@ -16,7 +16,7 @@ header {
   top: 0;
   z-index: 999;
   background: white;
-  box-shadow: 0 0 3px #999;
+  box-shadow: 0 0 30px #999;
 }
 
 #headerLogo {
