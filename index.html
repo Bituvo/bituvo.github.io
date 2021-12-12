@@ -25,15 +25,15 @@
   
   <div style='display: flex; font-size: 30px; margin-left: 20px;'>
     <div class='languageOption'>
-      <input type='radio' id='all' name='languageSelection' value='all' checked onclick="refreshProjects('all');">
+      <input type='radio' id='all' name='languageSelection' value='all' onclick="refreshProjects('all');" checked>
       <label for='all' onclick="refreshProjects('all');">All</label>
     </div>
     <div class='languageOption'>
-      <input type='radio' id='python' name='languageSelection' value='python' checked onclick="refreshProjects('python');">
+      <input type='radio' id='python' name='languageSelection' value='python' onclick="refreshProjects('python');">
       <label for='python' onclick="refreshProjects('python');">Python</label>
     </div>
     <div class='languageOption'>
-      <input type='radio' id='javascript' name='languageSelection' value='javascript' checked onclick="refreshProjects('javascript');">
+      <input type='radio' id='javascript' name='languageSelection' value='javascript' onclick="refreshProjects('javascript');">
       <label for='javascript' onclick="refreshProjects('javascript');">Javascript</label>
     </div>
   </div>
@@ -41,5 +41,5 @@
   <div id='projects'>
   </div>
   
-  <script>refreshProjects('all');</script
+  <script>refreshProjects('all');</script>
 </html>
