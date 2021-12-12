@@ -51,5 +51,3 @@ function refreshProjects(mode) {
     };
   };
 };
-
-refreshProjects('all');
