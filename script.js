@@ -17,12 +17,24 @@ function addProject(data) {
   newProjectDiv.onclick = function() {
     document.location.href = link;
   };
-  newProjectDiv.style.cssText += 'cursor: pointer;';
+  newProjectDiv.style.cssText += 'position: relative; cursor: pointer;';
   
   newProjectDiv.innerHTML += '<h1>' + title + '</h1>';
   for (const label of info) {
     newProjectDiv.innerHTML += "<p style='margin-top: 15px; font-size: 25px;'>" + label + "</p>";
   };
+  
+  const languageDiv = document.createElement('div');
+  languageDiv.style.cssText += 'position: absolute; bottom: 0;';
+  if (language == 'Python') {
+    languageDiv.innerHTML += "<img src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' width='25' height='25'>"
+    languageDiv.innerHTML += "<p style='float: right; margin: 0; margin-left: 10px; line-height: 25px;'>Python</p>"
+  } else if (language == 'Javascript') {
+    languageDiv.innerHTML += "<img src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' width='25' height='25'>"
+    languageDiv.innerHTML += "<p style='float: right; margin: 0; margin-left: 10px; line-height: 25px;'>Javascript</p>"
+  };
+  
+  newProjectDiv.appendChild(languageDiv);
   
   projectsDiv.appendChild(newProjectDiv);
 }
