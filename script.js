@@ -27,11 +27,11 @@ function addProject(data) {
   const languageDiv = document.createElement('div');
   languageDiv.style.cssText += 'position: absolute; bottom: 0;';
   if (language == 'Python') {
-    languageDiv.innerHTML += "<img src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' width='25' height='25'>"
-    languageDiv.innerHTML += "<p style='float: right; margin: 0; margin-left: 10px; line-height: 25px;'>Python</p>"
+    languageDiv.innerHTML += "<img src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' width='25' height='25'>";
+    languageDiv.innerHTML += "<p style='float: right; margin: 0; margin-left: 10px; line-height: 25px;'>Python</p>";
   } else if (language == 'Javascript') {
-    languageDiv.innerHTML += "<img src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' width='25' height='25'>"
-    languageDiv.innerHTML += "<p style='float: right; margin: 0; margin-left: 10px; line-height: 25px;'>Javascript</p>"
+    languageDiv.innerHTML += "<img src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' width='25' height='25'>";
+    languageDiv.innerHTML += "<p style='float: right; margin: 0; margin-left: 10px; line-height: 25px;'>Javascript</p>";
   };
   
   newProjectDiv.appendChild(languageDiv);
