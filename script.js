@@ -25,7 +25,7 @@ function addProject(data) {
   };
   
   const languageDiv = document.createElement('div');
-  languageDiv.style.cssText += 'position: absolute; bottom: 0;';
+  languageDiv.style.cssText += 'position: absolute; bottom: 0; margin-bottom: 15px;';
   if (language == 'Python') {
     languageDiv.innerHTML += "<img src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' width='25' height='25'>";
     languageDiv.innerHTML += "<p style='float: right; margin: 0; margin-left: 10px; line-height: 25px;'>Python</p>";
