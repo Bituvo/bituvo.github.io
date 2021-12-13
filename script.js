@@ -1,8 +1,5 @@
 const projects = [
-  new Array('https://bituvo.github.io/wordGenerator', 'Random Word Generator', 'A simple random, pronouceable word generator written in Javascript.', 'Javascript'),
-  new Array('https://google.com/', 'Poopyfard', 'Poopy fard!', 'Poopy!', 'Python'),
-  new Array('https://mail.google.com/', 'I can\'t believe it', 'I am devastated.', 'Javascript'),
-  new Array('https://turbowarp.org/', 'Haha', 'Just kidding! XD', 'Python')
+  new Array('https://bituvo.github.io/wordGenerator', 'Random Word Generator', 'A simple random, pronouceable word generator.', 'Javascript')
 ];
   
 function addProject(data) {
