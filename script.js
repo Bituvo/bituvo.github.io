@@ -43,17 +43,17 @@ function refreshProjects(mode) {
   }
   
   if (mode == 'all') {
-    for (const item in projects) {
+    for (const item of projects) {
       addProject(projects[item]);
     };
   } else if (mode == 'python') {
-    for (const item in projects) {
+    for (const item of projects) {
       if (projects[item][projects[item].length - 1] == 'Python') {
           addProject(projects[item]);
       };
     };
   } else if (mode == 'javascript') {
-    for (const item in projects) {
+    for (const item of projects) {
       if (projects[item][projects[item].length - 1] == 'Javascript') {
           addProject(projects[item]);
       };
