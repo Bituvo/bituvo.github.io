@@ -17,8 +17,8 @@ function addProject(data) {
   newProjectDiv.style.cssText += 'position: relative; cursor: pointer;';
   
   newProjectDiv.innerHTML += '<h1>' + title + '</h1>';
-  for (const label of info) {
-    newProjectDiv.innerHTML += "<p style='margin-top: 15px; font-size: 25px;'>" + label + "</p>";
+  for (var i = 0; i < info.length; i++) {
+    newProjectDiv.innerHTML += "<p style='margin-top: 15px; font-size: 25px;'>" + info[i] + "</p>";
   };
   
   const languageDiv = document.createElement('div');
@@ -43,19 +43,19 @@ function refreshProjects(mode) {
   }
   
   if (mode == 'all') {
-    for (const item of projects) {
-      addProject(projects[item]);
+    for (var i = 0; i < projects.length; i++) {
+      addProject(projects[i]);
     };
   } else if (mode == 'python') {
-    for (const item of projects) {
-      if (projects[item][projects[item].length - 1] == 'Python') {
-          addProject(projects[item]);
+    for (var i = 0; i < projects.length; i++) {
+      if (projects[i][projects[i].length - 1] == 'Python') {
+          addProject(projects[i]);
       };
     };
   } else if (mode == 'javascript') {
-    for (const item of projects) {
-      if (projects[item][projects[item].length - 1] == 'Javascript') {
-          addProject(projects[item]);
+    for (var i = 0; i < projects.length; i++) {
+      if (projects[i][projects[i].length - 1] == 'Javascript') {
+          addProject(projects[i]);
       };
     };
   };
